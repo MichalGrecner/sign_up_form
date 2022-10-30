@@ -7,13 +7,13 @@ header{
     
 }
 body{
-    margin: 0 auto;
-    background-color: black;
-    color: antiquewhite;
+    margin: 0 0;
+    
+    background-color: grey;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    height: auto;
 }
 
 main{
@@ -22,24 +22,27 @@ main{
     justify-content: start;
     gap:0;
     
+    
 }
 
 .leftContainer{
     position:relative;
+    height: 100vh;
+    
+
 }
 
 img{
     width: 100%;  
-    height: 800px; 
+    height: 100%; 
     position:relative;
-    top:0;
-    left:0;
 }
 .credit {
     position: absolute;
     bottom: 5px;
     width:100%;
     text-align: center;
+    color:white;
 
   }
 .credit p{
@@ -47,26 +50,27 @@ img{
     
 }
 .rightContainer{
-    padding-top: 50px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
-    width:auto;
+    width:600px;
     background-color: rgb(222, 220, 220);
 }
 .rightContainer h3{
     color:rgb(1, 22, 21);
     margin-left:30px;
     margin-bottom: 20px;
+    font-size: 25px;
 }
 .rightContainer p{
     color:rgb(1, 22, 21);
     margin-left: 30px;
     margin-top: 30px;
-    
-    width:450px;
+    font-size: 20px;
+    width:500px;
 }
 .intro{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .formContainer{
@@ -77,6 +81,7 @@ img{
     margin-left: 30px;
     margin-top: 30px;
     color: black;
+    font-size: 30px;
 }
 
 .formContainer form{
@@ -96,28 +101,34 @@ img{
 }
 form input{
     margin-bottom: 10px;
+    width:250px;
+    height:35px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-left: 10px;
 }
 
 form label{
     color:black;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 
 .bottomContainer{
-    margin-top: 60px;
+    
 }
 .bottomContainer button{
-    background-color: rgb(141, 28, 28);
-    width: 100px;
-    height: 40px;
-    border: 3px solid rgb(141, 28, 28);
-    border-radius: 3px;
+    width: 240px;
+    height: 60px;
+    border: 3px solid rgb(28, 135, 141);
+    color:rgb(28, 135, 141);
+    font-size: 25px;
+    border-radius: 10px;
     margin-left: 30px;
-    color:#fff;
-
-
-
-
-
+    margin-top: 30px;
+}
+button:hover{
+    color:rgb(222, 220, 220);
+    background-color: rgb(28, 135, 141);
 }
