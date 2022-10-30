@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,35 +10,54 @@ header{
     
 }
 body{
-    margin: 0 0;
-    
-    background-color: grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
+    background-color: rgb(58, 56, 56);
 }
 
 main{
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    gap:0;
-    
-    
+    width:100%;
+    justify-content: center;
 }
 
 .leftContainer{
+    width:auto;
     position:relative;
     height: 100vh;
-    
-
 }
 
 img{
-    width: 100%;  
+    width: auto;  
     height: 100%; 
     position:relative;
+}
+
+.logoContainer{
+    position: absolute;
+    top:100px;
+    width: 100%;
+    height:300px;
+    background-color: rgb(78, 101, 96);
+    opacity:40%;
+    
+
+}
+.logoDiv{
+    position: absolute;
+    top:180px;
+    width: 100%;
+    
+      
+}
+
+.logoDiv p{
+    font-family: 'Exo';
+    text-align: center;
+    color:rgb(47, 129, 109);
+    font-size: 70px;
+    padding-top: 20px;
+    text-shadow: 0px 2px rgb(171, 80, 80);
+    
 }
 .credit {
     position: absolute;
@@ -50,20 +72,20 @@ img{
     
 }
 .rightContainer{
+    width: 100vh;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
-    width:600px;
     background-color: rgb(222, 220, 220);
 }
 .rightContainer h3{
-    color:rgb(1, 22, 21);
+    color:rgb(57, 57, 57);
     margin-left:30px;
     margin-bottom: 20px;
     font-size: 25px;
 }
 .rightContainer p{
-    color:rgb(1, 22, 21);
+    color:rgb(57, 57, 57);
     margin-left: 30px;
     margin-top: 30px;
     font-size: 20px;
@@ -74,13 +96,14 @@ img{
 }
 
 .formContainer{
-    background-color: white;
+    background-color: rgb(238, 237, 237);
     padding-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .formContainer h4{
     margin-left: 30px;
     margin-top: 30px;
-    color: black;
+    color: rgb(57, 57, 57);
     font-size: 30px;
 }
 
@@ -90,6 +113,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: start;
+    
 }
 
 .left-column, .right-column{
@@ -104,14 +128,15 @@ form input{
     width:250px;
     height:35px;
     border: 1px solid grey;
-    border-radius: 5px;
+    border-radius: 35px;
     font-size: 20px;
     padding-left: 10px;
 }
 
 form label{
-    color:black;
+    color:rgb(57, 57, 57);
     font-size: 15px;
+    padding-left: 15px;
 }
 
 
@@ -132,3 +157,4 @@ button:hover{
     color:rgb(222, 220, 220);
     background-color: rgb(28, 135, 141);
 }
+
