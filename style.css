@@ -10,7 +10,7 @@ header{
     
 }
 body{
-    background-color: rgb(58, 56, 56);
+    background-color: rgb(159, 159, 159);
 }
 
 main{
@@ -18,38 +18,49 @@ main{
     flex-direction: row;
     width:100%;
     justify-content: center;
+    
+    
 }
 
 .leftContainer{
     width:auto;
     position:relative;
     height: 100vh;
+    min-height: 887px;
+    min-width: 593px;
+    
 }
 
-img{
-    width: auto;  
+.bckground{
+    width:593px; 
+
     height: 100%; 
-    position:relative;
+    position:absolute;
+    
 }
 
 .logoContainer{
     position: absolute;
-    top:100px;
+    top:90px;
     width: 100%;
     height:300px;
     background-color: rgb(78, 101, 96);
     opacity:40%;
-    
-
 }
 .logoDiv{
     position: absolute;
-    top:180px;
+    top:12%;
     width: 100%;
     
-      
 }
+.logoimg {
+    position:absolute;
+    width:auto;
+    height:150px;
+    top:90px;
+    left:230px;
 
+}
 .logoDiv p{
     font-family: 'Exo';
     text-align: center;
@@ -64,19 +75,31 @@ img{
     bottom: 5px;
     width:100%;
     text-align: center;
-    color:white;
+    
+    display:flex;
+    flex-direction: column;
 
   }
-.credit p{
-    
-    
+.credit p{ 
+    color:#596D48
 }
+
+.credit a{
+    font-style: normal;
+    color:rgb(202, 53, 53)
+}
+
+
+
+
 .rightContainer{
+        
     width: 100vh;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     background-color: rgb(222, 220, 220);
+    min-width: 700px;
 }
 .rightContainer h3{
     color:rgb(57, 57, 57);
@@ -127,10 +150,10 @@ form input{
     margin-bottom: 10px;
     width:250px;
     height:35px;
-    border: 1px solid grey;
+    border: 1px solid #596D48;
     border-radius: 35px;
-    font-size: 20px;
-    padding-left: 10px;
+    font-size: 17px;
+    padding-left: 15px;
 }
 
 form label{
@@ -139,10 +162,19 @@ form label{
     padding-left: 15px;
 }
 
-
-.bottomContainer{
-    
+form input:invalid{
+    border: 1px solid red;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+
+
+
 .bottomContainer button{
     width: 240px;
     height: 60px;
@@ -158,3 +190,28 @@ button:hover{
     background-color: rgb(28, 135, 141);
 }
 
+
+.bottomContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:170px;
+    
+}
+
+.github{
+   
+   
+   
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+
+   
+}
+
+.githubIcon{
+    height: 30px;
+    width:30px; 
+}
