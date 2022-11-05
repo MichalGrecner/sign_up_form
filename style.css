@@ -26,7 +26,7 @@ main{
     width:auto;
     position:relative;
     height: 100vh;
-    min-height: 887px;
+    min-height: 943px;
     min-width: 593px;
     
 }
@@ -89,36 +89,36 @@ main{
     color:rgb(202, 53, 53)
 }
 
-
-
-
 .rightContainer{
-        
-    width: 100vh;
-    padding-top: 30px;
+    position: relative;;
     display: flex;
     flex-direction: column;
     background-color: rgb(222, 220, 220);
-    min-width: 700px;
+    min-width: 943px;
+    min-height: 943px;
 }
-.rightContainer h3{
+
+.rightContainer p, h3, button {
+    margin-left: 30px;
+}
+.intro h3{
     color:rgb(57, 57, 57);
-    margin-left:30px;
-    margin-bottom: 20px;
+    
     font-size: 25px;
 }
-.rightContainer p{
+.intro, .bottomContainer p{
     color:rgb(57, 57, 57);
     margin-left: 30px;
-    margin-top: 30px;
     font-size: 20px;
     width:500px;
 }
 .intro{
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .formContainer{
+    padding-left: 30px;
     background-color: rgb(238, 237, 237);
     padding-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -162,8 +162,10 @@ form label{
     padding-left: 15px;
 }
 
-form input:invalid{
-    border: 1px solid red;
+
+form input:focus{
+    outline: none !important;
+    border: 2px solid #596D48;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -178,40 +180,47 @@ input[type=number]::-webkit-outer-spin-button {
 .bottomContainer button{
     width: 240px;
     height: 60px;
-    border: 3px solid rgb(28, 135, 141);
-    color:rgb(28, 135, 141);
+    border: 3px solid rgb(107, 107, 107);
+    color:rgb(107, 107, 107);;
     font-size: 25px;
     border-radius: 10px;
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 button:hover{
     color:rgb(222, 220, 220);
-    background-color: rgb(28, 135, 141);
+    background-color: rgb(107, 107, 107);
 }
 
 
 .bottomContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap:170px;
-    
+    padding-top: 30px;
+    padding-left: 30px;
 }
+.bottomContainer a{
+    color: rgb(57, 57, 57);
+}
+
+
 
 .github{
-   
-   
-   
-   display: flex;
-   align-items: center;
-   text-align: center;
-   justify-content: center;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
 
    
 }
-
+.github a{
+    color: rgb(57, 57, 57);
+}
 .githubIcon{
-    height: 30px;
-    width:30px; 
+    height: 20px;
+    width:20px; 
+    padding-bottom: 0;
+    text-align: center;
 }
